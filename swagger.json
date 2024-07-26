@@ -5,43 +5,11 @@
     "description": "Job request Api",
     "version": "1.0.0"
   },
-  "host": "cse340-final-it-job-request.onrender.com",
+  "host": "cse340-final-it-job-request.onrender.com/",
   "basePath": "/",
   "schemes": [
     "https"
   ],
-  "paths": {
-    "/": {
-      "get": {
-        "tags": [],
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/login": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/logout": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/locations/": {
       "get": {
         "description": "",

@@ -5,8 +5,8 @@ const doc = {
         title: 'Job request Api',
         description: 'Job request Api'
     },
-    host: 'localhost:3000',
-    schemes: ['http', 'https'],
+    host: 'cse340-final-it-job-request.onrender.com/',
+    schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
