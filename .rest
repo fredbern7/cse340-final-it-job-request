@@ -1,0 +1,133 @@
+### Get all users
+GET http://localhost:3000/users
+
+### Get one User
+GET http://localhost:3000/users/66a0a8ee48cdbac7f345c6ac
+
+### Create user
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Berny",
+  "middleName": "",
+  "lastName": "Fred",
+  "email": "bfred@test.com",
+  "password": "1234qwer",
+  "role": "admin",
+  "locationId": "66a31ebac689a98c94148d9c"
+}
+
+### Update user
+PUT http://localhost:3000/users/66a221bca3f15f48fcb74ba4 HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "June",
+  "middleName": "",
+  "lastName": "Test",
+  "email": "jtest@testing.com",
+  "password": "1234qwer",
+  "role": "admin",
+  "locationId": "66a0a6d2b37a8afcb465ca30"
+}
+
+### Delete User
+DELETE  http://localhost:3000/users/66a221d7a3f15f48fcb74ba6
+
+
+### Get all locations
+GET http://localhost:3000/locations
+
+### Get one location
+GET http://localhost:3000/locations/66a0a6d2b37a8afcb465ca32 HTTP/1.1
+
+### Create location
+POST http://localhost:3000/locations HTTP/1.1
+Content-Type: application/json
+
+{
+  "locationName": "John",
+  "extension": "104"
+}
+
+### Update location
+PUT http://localhost:3000/locations/66a0a6d4b37a8afcb465ca33 HTTP/1.1
+Content-Type: application/json
+
+{
+  "locationName": "Public Clinic",
+  "extension": "105"
+}
+
+### Delete location
+DELETE http://localhost:3000/locations/66a2439a8d5401cea07baaa6 HTTP/1.1
+
+
+### Get all requests
+GET http://localhost:3000/jobrequests
+Accept: application/json
+
+
+### Get one request
+GET http://localhost:3000/jobrequests/66a24f2ff90ccaecbd7b344f
+Accept: application/json
+
+### Create request
+POST http://localhost:3000/jobrequests/
+Content-Type: application/json
+
+{
+  "title": "New Job Request",
+  "description": "Description of the job request",
+  "status": "open",
+  "priority": "high",
+  "assignedTo": ""
+}
+
+### Update request
+PUT http://localhost:3000/jobrequests/66a2289d7a354bd45b7aa784 HTTP/1.1
+Content-Type: application/json
+
+{
+  "status": "in-progress",
+  "priority": "medium",
+  "assignedTo": ""
+}
+
+### Delete request
+DELETE http://localhost:3000/jobrequests/66a25f1abc089ee1821f7592
+
+
+### Get all comments
+GET http://localhost:3000/comments/
+Content-Type: application/json
+
+### Get one comment
+GET http://localhost:3000/comments/
+Content-Type: application/json
+
+### Create comment
+POST http://localhost:3000/comments/
+Content-Type: application/json
+
+{
+  "requestId": "66a25f1abc089ee1821f7592",
+  "userId": "66a222d4a3f15f48fcb74ba7",
+  "comment": "Deleting Test"
+}
+
+### Update comment
+PUT http://localhost:3000/comments/669f0f9ad11685b35f5b35be
+Content-Type: application/json
+
+{
+  "requestId": "66a2418f94241e70b40698a4",
+  "userId": "66a222d4a3f15f48fcb74ba7",
+  "comment": "Testing 3"
+}
+
+### Delete comment
+DELETE http://localhost:3000/comments/669f2fad8c1f1b064350fde7
+Content-Type: application/json
+
